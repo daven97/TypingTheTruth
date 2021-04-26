@@ -1,0 +1,571 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>TypingTheTruth</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <style>
+    html {
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: flex-start;
+    }
+
+    .dave {
+      color: pink;
+    }
+
+    .controls {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 800px;
+    }
+
+    label {
+      margin: 3px 0;
+      display: flex;
+    }
+
+    .purple {
+      color: #911eb4;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .orange {
+      color: orange;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .brown {
+      color: brown;
+    }
+
+    .lightBlue {
+      color: #00CCCC;
+    }
+
+    .yellow {
+      color: #f1af09;
+    }
+
+    .pink {
+      color: #cc00cc;
+    }
+
+    .invisible {
+      display: none;
+    }
+
+    .visible {
+      display: unset;
+    }
+
+    h1 {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 50px;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f5f5f5;
+      height: 100%;
+    }
+
+    label {
+      font-family: "Lucida Console", Monaco, monospace;
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: .98rem;
+      align-items: center;
+    }
+
+    input {
+      margin-left: 7px;
+    }
+
+    input[type=checkbox] {
+      transform: scale(1.1);
+    }
+
+    .inner {
+      border: 3px solid black;
+      border-radius: 10px;
+      padding: 15px 20px;
+      background-color: #f5f4f5;
+    }
+
+    .text {
+      height: 100%;
+      overflow-y: scroll;
+      width: 100%;
+      padding: 10px 30px;
+      line-height: 2rem;
+      font-family: "Lucida Console", Monaco, monospace;
+      margin-bottom: 50px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>TypingTheTruth</h1>
+  <h4>A Tool for Comparing the Accounts of Joseph Smith's First Vision</h4>
+  <div class="container">
+    <div class="controls">
+      <div class="inner">
+        <label class="purple"><input type="checkbox" id="1" checked>JS History (1832)</input></label>
+        <label class="blue"><input type="checkbox" id="2" checked>JS, Journal (1835)</input></label>
+        <label class="green"><input type="checkbox" id="3" checked>JS History (1838)</input></label>
+        <label class="orange"><input type="checkbox" id="4" checked>Wentworth Letter (1842)</input></label>
+        <label class="red"><input type="checkbox" id="5" checked>Interesting Account (1840)</input></label>
+        <label class="brown"><input type="checkbox" id="6" checked>Cry Out of The Wilderness (1842)</input></label>
+        <label class="lightBlue"><input type="checkbox" id="7" checked>L. Richards, Journal (1843)</input></label>
+        <label class="yellow"><input type="checkbox" id="8" checked>D. Nye, JS Interview (1843)</input></label>
+        <label class="pink"><input type="checkbox" id="9" checked>A. Neibaur, Journal (1844)</input></label>
+      </div>
+    </div>
+    <div class="text">
+      <span class="purple">I was born in the town of Charon [Sharon] in the &lt;State&gt; of Vermont North America on
+        the twenty third day of December AD 1805 of goodly Parents who spared no pains to instruct&lt;ing&gt; me in
+        &lt;the&gt; christian religion[.]</span>
+      <span class="green">I was born in the year of our Lord One thousand Eight hundred and five, on the twenty third
+        day of December, in the town of Sharon, Windsor County, State of Vermont.</span>
+      <span class="orange">I was born in the town of Sharon Windsor co., Vermont, on the 23d of December, A. D. 1805.
+      </span>
+      <span class="red">MR JOSEPH SMITH, jun., who made the following important discovery, was born in the town of
+        Sharon, Windsor county, Vermont, on the 23d of December, A.D. 1805.</span>
+      <span class="brown">Joseph Smith jun[ior], the person to whom the angel of the Lord was first sent, was born on
+        December 23 in the year of our Lord 1805 in the town of Sharon, Windsor County, Vermont.</span>
+      <span class="purple">At the age of about ten years my Father Joseph Smith Seignior moved to Palmyra Ontario County
+        in the State of New York and being in indigent circumstances were obliged to labour hard for the support of a
+        large Family having nine chilldren and as it required their exertions of all that were able to render any
+        assistance for the support of the Family therefore we were deprived of the bennifit of an education suffice it
+        to say I was mearly instructtid in reading and writing and the ground &lt;rules&gt; of Arithmatic which
+        const[it]uted my whole literary acquirements.</span>
+      <span class="green">My father Joseph Smith Senior left the State of Vermont and moved to Palmyra, Ontario, (now
+        Wayne) County, in the State of New York when I was in my tenth year.</span>
+      <span class="orange">When ten years old my parents removed to Palmyra New York,</span>
+      <span class="red">When ten years old, his parents, with their family, moved to Palmyra, New York;</span>
+      <span class="brown">When he was ten years old, his parents moved to Palmyra in the state of New York.</span>
+      <span class="green">In about four years after my father’s arrival at Palmyra, he moved with his family into
+        Manchester in the same County of Ontario. His family consisting of eleven souls, namely, My Father Joseph Smith,
+        My Mother Lucy Smith whose name previous to her marriage was Mack, daughter of Solomon Mack, my brothers Alvin
+        (who is now dead) Hyrum, Myself, Samuel Harrison, William, Don Carloss [Carlos], and my Sisters Soph[r]onia,
+        Cathrine [Katharine] and Lucy.</span>
+      <span class="orange">where we resided about four years, and from thence we removed to the town of Manchester. My
+        father was a farmer and taught me the art of husbandry.</span>
+      <span class="red">in the vicinity of which he resided for about eleven years, the latter part in the town of
+        Manchester. Cultivating the earth for a livelihood was his occupation, in which he employed the most of his
+        time. His advantages, for acquiring literary knowledge, were exceedingly small; hence, his education was limited
+        to a slight acquaintance with two or three of the common branches of learning. He could read without much
+        difficulty, and write a very imperfect hand; and had a very limited understanding of the ground rules of
+        arithmetic. These were his highest and only attainments; while the rest of those branches, so universally taught
+        in the common schools throughout the United States, were entirely unknown to him.</span>
+      <span class="brown">For almost eleven years he lived here [in Palmyra] and in the neighboring town of Manchester.
+        His only occupation was to plow and cultivate the soil. Because his parents were poor and had to feed a large
+        family, his education was meager. He was able to read fairly well, but his ability to write was very limited and
+        had only little literary knowledge. His knowledge of letters did not go any further. Most of the subjects which
+        were generally taught in the United States of America were completely unknown to him at the time he was favored
+        with a heavenly message.</span>
+      <span class="green">Sometime in the second year after our removal to Manchester, there was in the place where we
+        lived an unusual excitement on the subject of religion. It commenced with the Methodist, but soon became general
+        among all the sects in that region of country, indeed the whole district of Country seemed affected by it and
+        great multitudes united themselves to the different religious parties, which created no small stir and division
+        among the people, Some Crying, “Lo here” and some Lo there. Some were contending for the Methodist faith, Some
+        for the Presbyterian, and some for the Baptist; for notwithstanding the great love which the converts to these
+        different faiths expressed at the time of their conversion, and the great Zeal manifested by the respective
+        Clergy who were active in getting up and promoting this extraordinary scene of religious feeling in order to
+        have every body converted as they were pleased to call it, let them join what sect they pleased[.] Yet when the
+        Converts began to file off some to one party and some to another, it was seen that the seemingly good feelings
+        of both the Priests and the Converts were mere pretence more pretended than real, for a scene of great confusion
+        and bad feeling ensued; Priest contending against priest, and convert against convert so that all their good
+        feelings one for another (if they ever had any) were entirely lost in a strife of words and a contest about
+        opinions.
+        I was at this time in my fifteenth year. My Fathers family was proselyted to the Presbyterian faith and four of
+        them joined that Church, Namely, My Mother Lucy, My Brothers Hyrum, Samuel Harrison, and my Sister
+        Sophonia.</span>
+      <span class="purple">At about the age of twelve years my mind become seriously imprest with regard to the all
+        importent concerns of for the wellfare of my immortal Soul</span>
+      <span class="blue">Being wrought up in my mind respecting the subject of Religion, and looking at the different
+        systems taught the children of men, I knew not who was right or who was wrong, but considered it of the first
+        importance to me that I should be aright right, in matters of so much moment, matter involving eternal
+        consequences</span>
+      <span class="green">During this time of great excitement my mind was called up to serious reflection and great
+        uneasiness, but though my feelings were deep and often pungent, still I kept myself aloof from all these parties
+        though I attended their several meetings as occasion would permit. But in process of time my mind became
+        somewhat partial to the Methodist sect, and I felt some desire to be united with them, but so great was the
+        confusion and strife amongst the different denominations that it was impossible for a person young as I was and
+        so unacquainted with men and things to come to any certain conclusion who was right and who was wrong.
+        My mind at different times was greatly excited for the cry and tumult were so great and incessant. The
+        Presbyterians were most decided against the Baptists and Methodists, and used all their powers of either reason
+        or sophistry to prove their errors, or at least to make the people think they were in error. On the other hand
+        the Baptists and Methodists in their turn were equally Zealous in endeavoring to establish their own tenets and
+        disprove all others.
+        In the midst of this war of words, and tumult of opinions, I often said to myself, what is to be done? Who of
+        all these parties are right? Or are they all wrong together? and if any one of them be right which is it? And
+        how shall I know it?</span>
+      <span class="orange">When about fourteen years of age I began to reflect upon the importance of being prepared for
+        a future state, and upon enquiring the plan of salvation I found that there was a great clash in religious
+        sentiment; if I went to one society they referred me to one plan, and another to another; each one pointing to
+        his own particular creed as the summum bonum of perfection: considering that all could not be right, and that
+        God could not be the author of so much confusion</span>
+      <span class="red">When somewhere about fourteen or fifteen years old, he began seriously to reflect upon the
+        necessity of being prepared for a future state of existence: but how, or in what way, to prepare himself, was a
+        question, as yet, undetermined in his own mind: he perceived that it was a question of infinite importance, and
+        that the salvation of his soul depended upon a correct understanding of the same. He saw, that if he understood
+        not the way, it would be impossible to walk in it, except by chance; and the thought of resting his hopes of
+        eternal life upon chance, or uncertainties, was more than he could endure. If he went to the religious
+        denominations to seek information, each one pointed to its particular tenets, saying—“This is the way, walk ye
+        in it;” while, at the same time, the doctrines of each were, in many respects, in direct opposition to one
+        another. It, also, occurred to his mind, that God was not the author of but one doctrine, and therefore could
+        not acknowledge but one denomination as his church; and that such denomination must be a people, who believe,
+        and teach, that one doctrine, (whatever it may be,) and build upon the same. He then reflected upon the immense
+        number of doctrines, now, in the world, which had given rise to many hundreds of different denominations. The
+        great question to be decided in his mind, was—if any one of these denominations be the Church of Christ, which
+        one is it? Until he could become satisfied, in relation to this question, he could not rest contented. To trust
+        to the decisions of fallible man, and build his hopes upon the same, without any certainty, and knowledge, of
+        his own, would not satisfy the anxious desires that pervaded his breast. To decide, without any positive and
+        definite evidence, on which he could rely, upon a subject involving the future welfare of his soul, was
+        revolting to his feelings.</span>
+      <span class="brown">When he had reached his fifteenth year, he began to think seriously about the importance of
+        preparing for a future [existence]; but it was very difficult for him to decide how he should go about such an
+        important undertaking. He recognized clearly that it would be impossible for him to walk the proper path without
+        being acquainted with it beforehand; and to base his hopes for eternal life on chance or blind uncertainty would
+        have been more than he had ever been inclined to do.
+        He discovered the world of religion working under a flood of errors which by virtue of their contradictory
+        opinions and principles laid the foundation for the rise of such different sects and denominations whose
+        feelings toward each other all too often were poisoned by hate, contention, resentment and anger. He felt that
+        there was only one truth and that those who understood it correctly, all understood it in the same way. Nature
+        had endowed him with a keen critical intellect and so he looked through the lens of reason and common sense and
+        with pity and contempt upon those systems of religion, which were so opposed to each other and yet were all
+        obviously based on the scriptures.
+        After he had sufficiently convinced himself to his own satisfaction that darkness covered the earth and gross
+        darkness [covered] the nations, the hope of ever finding a sect or denomination that was in possession of
+        unadulterated truth left him.</span>
+      <span class="lightBlue">Pres. J. Smith bore testimony to the same— saying that when he was a youth he began to
+        think about these these things but could not find out which of all the sects were right</span>
+      <span class="yellow">The Lord does reveal himself to me. I know it. He revealed himself to me first when I was
+        about fourteen years old, a mere boy. I will tell you about it. There was a reformation among the different
+        religious denominations in the neighborhood where I lived, and I became serious, and was desirous to know what
+        Church to join.</span>
+      <span class="pink">Br Joseph tolt us the first call he had a Revival Meeting his Mother & Br & Sister got
+        Religion, he wanted to get Religion too wanted to feel & shout like the Rest but could feel nothing,</span>
+      <span class="purple">which led me to searching the scriptures believeing as I was taught, that they contained the
+        word of God thus applying myself to them and my intimate acquaintance with those of differant denominations led
+        me to marvel excedingly for I discovered that &lt;they did not adorn&gt; instead of adorning their profession by
+        a holy walk and Godly conversation agreeable to what I found contained in that sacred depository this was a
+        grief to my Soul thus from the age of twelve years to fifteen I pondered many things in my heart concerning the
+        sittuation of the world of mankind the contentions and divi[si]ons the wicke[d]ness and abominations and the
+        darkness which pervaded the of the minds of mankind my mind become excedingly distressed for I become convicted
+        of my sins and by searching the scriptures I found that mand &lt;mankind&gt; did not come unto the Lord but that
+        they had apostatised from the true and liveing faith and there was no society or denomination that built upon
+        the gospel of Jesus Christ as recorded in the new testament and I felt to mourn for my own sins and for the sins
+        of the world for I learned in the scriptures that God was the same yesterday to day and forever that he was no
+        respecter to persons for he was God for I looked upon the sun the glorious luminary of the earth and also the
+        moon rolling in their magesty through the heavens and also the stars shining in their courses and the earth also
+        upon which I stood and the beast of the field and the fowls of heaven and the fish of the waters and also man
+        walking forth upon the face of the earth in magesty and in the strength of beauty whose power and intiligence in
+        governing the things which are so exceding great and marvilous even in the likeness of him who created him
+        &lt;them&gt; and when I considered upon these things my heart exclaimed well hath the wise man said the &lt;it
+        is a&gt; fool &lt;that&gt; saith in his heart there is no God my heart exclaimed all all these bear testimony
+        and bespeak an omnipotant and omnipreasant power a being who makith Laws and decreeeth and bindeth all things in
+        their bounds who filleth Eternity who was and is and will be from all Eternity to Eternity and when &lt;I&gt;
+        considered all these things and that &lt;that&gt; being seeketh such to worshep him as worship him in spirit and
+        in truth</span>
+      <span class="orange">I determined to investigate the subject more fully, believing that if God had a church it
+        would not be split up into factions, and that if he taught one society to worship one way, and administer in one
+        set of ordinances, he would not teach another principles which were diametrically opposed.</span>
+      <span class="red">The only alternative, that seemed to be left him, was to read the Scriptures, and endeavour to
+        follow their directions. He, accordingly, commenced perusing the sacred pages of the Bible, with sincerity,
+        believing the things that he read.</span>
+      <span class="brown">Consequently he began in an attitude of faith his own investigation of the word of God
+        [feeling that it was] the best way to arrive at a knowledge of the truth.</span>
+      <span class="green">While I was laboring under the extreme difficulties caused by the contests of these parties of
+        religionists, I was one day reading the Epistle of James, First Chapter and fifth verse which reads, “If any of
+        you lack wisdom, let him ask of God, that giveth to all men liberally and upbraideth not, and it shall be given
+        him.[”] Never did any passage of scripture come with more power to the heart of man that this did at this time
+        to mine. It seemed to enter with great force into every feeling of my heart. I reflected on it again and again,
+        knowing that if any person needed wisdom from God, I did, for how to act I did not know and unless I could get
+        more wisdom than I then had [I] would never know, for the teachers of religion of the different sects understood
+        the same passage of Scripture so differently as &lt;to&gt; destroy all confidence in settling the question by an
+        appeal to the Bible. At length I came to the conclusion that I must either remain in darkness and confusion or
+        else I must do as James directs, that is, Ask of God. I at last came to the determination to ask of God,
+        concluding that if he gave wisdom to them that lacked wisdom, and would give liberally and not upbraid, I might
+        venture.</span>
+      <span class="orange">Believing the word of God I had confidence in the declaration of James; “If any man lack
+        wisdom let him ask of God who giveth to all men liberally and upbraideth not and it shall be given him,”</span>
+      <span class="red">His mind soon caught hold of the following passage:—“If any of you lack wisdom, let him ask of
+        God, that giveth to all men liberally, and upbraideth not; and it shall be given him.”—James i. 5. From this
+        promise he learned, that it was the privilege of all men to ask God for wisdom, with the sure and certain
+        expectation of receiving, liberally; without being upbraided for so doing. This was cheering information to him:
+        tidings that gave him great joy. It was like a light shining forth in a dark place, to guide him to the path in
+        which he should walk. He, now, saw that if he inquired of God, there was, not only, a possibility, but a
+        probability; yea, more, a certainty, that he should [p. 4] obtain a knowledge, which, of all the doctrines, was
+        the doctrine of Christ; and, which, of all the churches, was the church of Christ.</span>
+      <span class="brown">He had not proceeded very far in this laudable endeavor when his eyes fell upon the following
+        verse of St. James [1:5]: “If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and
+        upbraideth not; and it shall be given him.” He considered this scripture an authorization for him to solemnly
+        call upon his creator to present his needs before him with the certain expectation of some success.</span>
+      <span class="yellow">While thinking of this matter, I opened the Testament promiscuously on these words, in James,
+        ‘Ask of the Lord who giveth to all men liberally and upbraideth not.’ I just determined I’d ask him. </span>
+      <span class="pink">opened his Bible the first Passage that struck him was if any man lack Wisdom let him ask of
+        God who giveth to all Men liberallity & upbraidet not</span>
+      <span class="brown">And so he began to pour out to the Lord with fervent determination the earnest desires of his
+        soul.</span>
+      <span class="purple">therefore I cried unto the Lord for mercy for there was none else to whom I could go and to
+        obtain mercy </span>
+      <span class="green">So in accordance with this my determination to ask of God, I retired to the woods to make the
+        attempt. It was on the morning of a beautiful clear day early in the spring of Eightteen hundred and twenty.9 It
+        was the first time in my life that I had &lt;made&gt; such an attempt, for amidst all &lt;my&gt; anxieties I had
+        never as yet made the attempt to pray vocally.
+        After I had retired into the place where I had previously designed to go, having looked around me and finding
+        myself alone, I kneeled down and began to offer up the desires of my heart to God,</span>
+      <span class="blue">Being thus perplexed in mind I retired to the silent grove. and there bowed down before the
+        Lord, under a realizing sense, (if the bible be true) ask and you shall receive, knock and it shall be opened,
+        seek and you shall find, and again, if any man lack wisdom, let [him ask] of God who giveth to all men liberally
+        & upbraideth not. Information was what I most desired, at this time. And with a fixed determination to obtain
+        it, I called on the Lord for the first time in the place above stated, or in other words, I made a fruitless
+        attempt to pray</span>
+      <span class="orange">I retired to a secret place in a grove and began to call upon the Lord,</span>
+      <span class="red">He, therefore, retired to a secret place, in a grove, but a short distance from his father’s
+        house, and knelt down, and began to call upon the Lord. </span>
+      <span class="brown">On one occasion, he went to a small grove of trees near his father’s home and knelt down
+        before God in solemn prayer.</span>
+      <span class="lightBlue">— he went into the grove</span>
+      <span class="yellow">I immediately went out into the woods where my father had a clearing, and went to the stump
+        where I had stuck my axe when I had quit work, and I kneeled down,</span>
+      <span class="pink">went into the Wood to pray kneelt himself down</span>
+      <span class="blue">My tongue seemed to be swoolen in my mouth, so that I could not utter. I heard a noise behind
+        me like some one walking towards me: I strove again to pray, but could not; the noise of walking seemed to draw
+        nearer; I sprang upon my feet and looked round, but saw no person, or thing that was calculated to produce the
+        noise of walking.</span>
+      <span class="green">I had scarcely done so, when immediately I was &lt;siezed&gt; upon by some power which
+        entirely overcame me and &lt;had&gt; such astonishing influence over me as to bind my tongue so that I could not
+        speak. Thick darkness gathered around me and it seemed to me for a time as if I were doomed to sudden
+        destruction. But exerting all my powers to call upon God to deliver me out of the power of this enemy which had
+        siezed upon me, and at the very moment when I was ready to sink into despair and abandon myself to destruction,
+        not to an imaginary ruin but to the power of some actual being from the unseen world who had such a marvelous
+        power as I had never before felt in any being. Just at this moment of great alarm</span>
+      <span class="red">At first, he was severely tempted by the powers of darkness, which endeavoured to overcome him;
+      </span>
+      <span class="brown">The adversary then made several strenuous efforts to cool his ardent soul. He filled his mind
+        with doubts and brought to mind all manner of inappropriate images to prevent him from obtaining the object of
+        his endeavors;</span>
+      <span class="pink">his tongue was closet cleavet to his roof— could utter not a word,</span>
+      <span class="blue">I kneeled again, my mouth was opened and my tongue loosed;</span>
+      <span class="red">but he continued to seek for deliverance, until darkness gave way from his mind;</span>
+      <span class="brown">but the overflowing mercy of God came to buoy him up and gave new impetus to his failing
+        strength. However, the dark cloud soon parted and light and peace filled his frightened heart.</span>
+      <span class="pink">felt easier after a while=</span>
+      <span class="purple">and the Lord heard my cry in the wilderness and while in &lt;the&gt; attitude of calling upon
+        the Lord &lt;in the 16th year of my age&gt;</span>
+      <span class="blue">I called on the Lord in mighty prayer.</span>
+      <span class="orange">while fervently engaged in supplication</span>
+      <span class="red">and he was enabled to pray, in fervency of the spirit, and in faith. And, while thus pouring out
+        his soul, anxiously desiring an answer from God,</span>
+      <span class="brown">Once again he called upon the Lord with faith and fervency of spirit.</span>
+      <span class="lightBlue">& enquired of the Lord which of all the sects were right</span>
+      <span class="yellow">and prayed, saying, ‘O Lord, what Church shall I join.’</span>
+      <span class="purple">a piller of fire light above the brightness of the sun at noon day come down from
+        above</span>
+      <span class="blue">A pillar of fire appeared above my head;</span>
+      <span class="green">I saw a pillar &lt;of&gt; light exactly over my head above the brightness of the sun, which
+        descended gracefully gradually untill it fell upon me. It no sooner appeared than I found myself delivered from
+        the enemy which held me bound.</span>
+      <span class="red">he, at length, saw a very bright and glorious light in the heavens above; which, at first,
+        seemed to be at a considerable distance. He continued praying, while the light appeared to be gradually
+        descending towards him; and, as it drew nearer, it increased in brightness, and magnitude, so that, by the time
+        that it reached the tops of the trees, the whole wilderness, for some distance around, was illuminated in a most
+        glorious and brilliant manner. He expected to have seen the leaves and boughs of the trees consumed, as soon as
+        the light came in contact with them; but, perceiving that it did not produce that effect, he was encouraged with
+        the hopes of being able to endure its presence. It continued descending, slowly, until it rested upon the earth,
+        and he was enveloped in the midst of it. When it first came upon him, it produced a peculiar sensation
+        throughout his whole system; and, immediately,</span>
+      <span class="yellow">Directly I saw a light,</span>
+      <span class="pink">saw a fire towards heaven came near</span>
+      <span class="purple">and rested upon me</span>
+      <span class="blue">which presently rested down upon me, and filled me with unspeakable joy.</span>
+      <span class="green">When the light rested upon me</span>
+      <span class="purple">and I was filled with the spirit of god and the &lt;Lord&gt; opened the heavens upon
+        me</span>
+      <span class="orange">my mind was taken away from the objects with which I was surrounded, and I was enwrapped in a
+        heavenly vision</span>
+      <span class="red">his mind was caught away, from the natural objects with which he was surrounded; and he was
+        enwrapped in a heavenly vision,</span>
+      <span class="brown">At this sacred moment, the natural world around him was excluded from his view, so that he
+        would be open to the presentation of heavenly and spiritual things.</span>
+      <span class="purple">and I saw the Lord</span>
+      <span class="blue">A personage appeared in the midst of this pillar of flame, which was spread all around and yet
+        nothing consumed. Another personage soon appeared like unto the first:</span>
+      <span class="green">I saw two personages (whose brightness and glory defy all description) standing above me in
+        the air.</span>
+      <span class="orange">and saw two glorious personages who exactly resembled each other in features, and likeness,
+        surrounded with a brilliant light which eclipsed the sun at noon-day.</span>
+      <span class="red">and saw two glorious personages, who exactly resembled each other in their features or
+        likeness.</span>
+      <span class="brown">Two glorious heavenly personages stood before him, resembling each other exactly in features
+        and stature.</span>
+      <span class="yellow">and then a glorious personage in the light, and then another personage,ord 1805 in the town
+        of Sharon, Windsor County, Vermont.</span>
+      <span class="pink">& nearer saw a personage in the fire light complexion blue eyes a piece of white cloth drawn
+        over his shoulders his right arm bear after a w[h]ile a other person came to the side of the first</span>
+      <span class="purple">and he spake unto me saying Joseph &lt;my son&gt; thy sins are forgiven thee. go thy
+        &lt;way&gt; walk in my statutes and keep my commandments behold I am the Lord of glory I was crucifyed for the
+        world that all those who believe on my name may have Eternal life</span>
+      <span class="blue">he said unto me thy sins are forgiven thee. He testified also unto me that Jesus Christ is the
+        son of God.</span>
+      <span class="green">One of &lt;them&gt; spake unto me calling me by name and said (pointing to the other) “This is
+        my beloved Son, Hear him.”</span>
+      <span class="red">He was informed, that his sins were forgiven.</span>
+      <span class="brown">They told him that his prayers had been answered and that the Lord had decided to grant him a
+        special blessing.</span>
+      <span class="yellow">and the first personage said to the second, “Behold my beloved Son, hear him.”</span>
+      <span class="green">My object in going to enquire of the Lord was to know which of all the sects was right, that I
+        might know which to join. No sooner therefore did I get possession of myself so as to be able to speak, than I
+        asked the personages who stood above me in the light, which of all the sects was right, (for at this time it had
+        never entered into my heart that all were wrong) and which I should join.</span>
+      <span class="green">I was answered that I must join none of them, for they were all wrong, and the Personage who
+        addressed me said that all their Creeds were an abomination in his sight, that those professors were all
+        corrupt, that “they draw near to me to with their lips but their hearts are far from me, They teach for
+        doctrines the commandments of men, having a form of Godliness but they deny the power thereof.” He again forbade
+        me to join with any of them</span>
+      <span class="orange">They told me that all religious denominations were believing in incorrect doctrines, and that
+        none of them was acknowledged of God as his church and kingdom. And I was expressly commanded to “go not after
+        them,”</span>
+      <span class="red">He was also informed upon the subjects, which had for some time previously agitated his mind,
+        viz.—that all the religious denominations were believing in incorrect doctrines; and, consequently, that none of
+        them was acknowledged of God, as his church and kingdom. And he was expressly commanded, to go not after
+        them;</span>
+      <span class="brown">He was also told that he should not join any of the religious sects or denominations, because
+        all of them erred in doctrine and none was recognized by God as his church and kingdom.</span>
+      <span class="lightBlue">—re received for answer that none of them were right, that they were all wrong, & that the
+        Everlasting covena[n]t was broken=</span>
+      <span class="yellow">I then, addressed this second person, saying, “O Lord, what Church shall I join.” He replied,
+        “don’t join any of them, they are all corrupt.”</span>
+      <span class="pink">Mr Smith then asked must I join the Methodist Church= No= they are not my People, th all have
+        gone astray there is none that doeth good no not one, but this is my Beloved son harken ye him, the fire drew
+        nigher</span>
+      <span class="green">and many other thing[s] did he say unto me which I cannot write at this time.</span>
+      <span class="orange">at the same time receiving a promise that the fulness of the gospel should at some future
+        time be made known unto me.</span>
+      <span class="red">and he received a promise that the true doctrine—the fulness of the gospel, should, at some
+        future time, be made known to him;</span>
+      <span class="brown">He was further commanded, to wait patiently until some future time, when the true doctrine of
+        Christ and the complete truth of the gospel would be revealed to him.</span>
+      <span class="purple">and my soul was filled with love and for many days I could rejoice with great Joy and the
+        Lord was with me</span>
+      <span class="blue">I saw many angels in this vision. I was about 14 years old when I received this first
+        communication.</span>
+      <span class="green">When I came to myself again I found myself lying on &lt;my&gt; back looking up into
+        Heaven.</span>
+      <span class="red">after which, the vision withdrew, leaving his mind in a state of calmness and peace,
+        indescribable.</span>
+      <span class="brown">The vision closed and peace and calm filled his mind.</span>
+      <span class="yellow">The vision then vanished, and when I come to myself, I was sprawling on my back; and it was
+        sometime before my strength returned.</span>
+      <span class="pink">Rested upon the tree enveloped him [illegible] comforted Indeavoured to arise but felt uncomen
+        feeble=</span>
+      <span class="green">Some few days after I had this vision I happened to be in company with one of the Methodist
+        Preachers who was very active in the before mentioned religious excitement and conversing with him on the
+        subject of religion I took occasion to give him an account of the vision which I had had.</span>
+      <span class="yellow">When I went home and told the people that I had a revelation, and that all the churches were
+        corrupt,</span>
+      <span class="pink">got into the house told the Methodist priest,</span>
+      <span class="green">I was greatly surprised at his behaviour, he treated my communication not only lightly but
+        with great contempt, saying it was all of the Devil, that there was no such thing as visions or revelations in
+        these days, that all such things had ceased with the apostles and that there never would be any more of them.
+        I soon found however that my telling the story had excited a great deal of prejudice against me among professors
+        of religion and was the cause of great persecution which continued to increase and though I was an obscure boy
+        only between fourteen and fifteen years of age and my circumstances in life such as to make a boy of no
+        consequence in the world, Yet men of high standing would take notice sufficiently to excite the public mind
+        against me and create a hot persecution, and this was common &lt;among&gt; all the sects: all united to
+        persecute me. It has often caused me serious reflection both then and since, how very strange it was that an
+        obscure boy of a little over fourteen years of age and one too who was doomed to the necessity of obtaining a
+        scanty maintainance by his daily labor should be thought a character of sufficient importance to attract the
+        attention of the great ones of the most popular sects of the day so as to create in them a spirit of the
+        bitterest persecution and reviling. But strange or not, so it was, and was often cause of great sorrow to
+        myself. However it was nevertheless a fact, that I had had a Vision. I have thought since that I felt much like
+        as Paul did when he made his defence before King Aggrippa and related the account of the Vision he had when the
+        saw a light and heard a voice, but still there were but few who beleived him, some said he was dishonest, others
+        said he was mad, and he was ridiculed and reviled, But all this did not destroy the reality of his vision. He
+        had seen a vision he knew he had, and &lt;all&gt; the persecution under Heaven could not make it otherwise, and
+        though they should persecute him unto death Yet he knew and would know to his latest breath that he had both
+        seen a light and heard a voice speaking unto him and all the world could not make him think or believe
+        otherwise. So it was with me, I had actualy seen a light and in the midst of that light I saw two personages,
+        and they did in reality speak &lt;un&gt;to me, or one of them did, And though I was hated and persecuted for
+        saying that I had seen a vision, Yet it was true and while they were persecuting me reviling me and speaking all
+        manner of evil against me falsely for so saying, I was led to say in my heart, why persecute for telling the
+        truth? I have actually seen a vision, “and who am I that I can withstand God” Or why does the world think to
+        make me deny what I have actually seen,</span>
+      <span class="purple">but could find none that would believe the hevnly vision</span>
+      <span class="yellow">they persecuted me, and they have persecuted me ever since. They thought to put me down, but
+        they hav’nt succeeded, and they can’t do it.</span>
+      <span class="pink">said this was not a age for God to Reveal himself in Vision Revelation has ◊ ceased with the
+        New Testament</span>
+      <span class="purple">nevertheless I pondered these things in my heart</span>
+      <span class="green">for I had seen a vision, I knew it, and I knew that God knew it, and I could not deny it,
+        neither dare I do it, at least I knew that by so doing &lt;I&gt; would offend God and come under condemnation.
+        I had now got my mind satisfied so far as the sectarian world was concerned, that it was not my duty to join
+        with any of them, but continue as I was untill further directed, for I had found the testimony of James to be
+        true, that a man who lacked wisdom might ask of God, and obtain and not be upbraided. I continued to pursue my
+        common avocations in life untill the twenty first of September, One thousand Eight hundred and twenty three, all
+        the time suffering severe persecution at the hand of all classes of men, both religious and irreligious because
+        I continued to affirm that I &lt;had&gt; seen a Vision.</span>
+      <span class="lightBlue">he said he understoood the fulness of the Gospel from beginning to end— & could Teach it &
+        also the order of the priesthood in all its ramifications= Earth & hell had opposed him & tryed to destroy him—
+        but they had not done it= & they &lt;never would&gt;</span>
+      <span class="yellow">When I have proved that I am right, and get all the world subdued under me, I think I shall
+        deserve something.</span>
+    </div>
+  </div>
+  <script>
+    let sourceColors = ['purple', 'blue', 'green', 'orange', 'red', 'brown', 'lightBlue', 'yellow', 'pink'];
+    document.querySelectorAll('input').forEach(el => {
+      el.addEventListener('change', checkbox => {
+        const indexVal = checkbox.target.id - 1;
+        document.querySelectorAll(`span.${sourceColors[indexVal]}`).forEach(pg => {
+          if (checkbox.target.checked) {
+            pg.classList.remove('invisible');
+            pg.classList.add('visible');
+          } else {
+            pg.classList.remove('visible');
+            pg.classList.add('invisible');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
